@@ -225,19 +225,9 @@ const Services = () => {
               </div>
 
               {/* Floating stats */}
-              <div className="absolute -top-6 -right-6 glass rounded-2xl p-4 animate-orbital-motion">
-                <div className="text-center">
-                  <div className="text-2xl font-orbitron font-bold text-green-400">98%</div>
-                  <div className="text-xs text-muted-foreground">Satisfação</div>
-                </div>
-              </div>
               
-              <div className="absolute -bottom-6 -left-6 glass rounded-2xl p-4 animate-matrix-drift">
-                <div className="text-center">
-                  <div className="text-2xl font-orbitron font-bold text-emerald-400">24/7</div>
-                  <div className="text-xs text-muted-foreground">Disponível</div>
-                </div>
-              </div>
+              
+              
             </div>
 
             {/* Right side - Features and Benefits */}
@@ -272,43 +262,26 @@ const Services = () => {
                 <h4 className="text-2xl font-orbitron font-bold text-green-400">Principais Funcionalidades:</h4>
                 
                 <div className="space-y-3">
-                  {[
-                    "Processamento de Linguagem Natural avançado",
-                    "Integração completa com WhatsApp Business API",
-                    "Fluxos de conversa personalizáveis e inteligentes",
-                    "Escalação automática para atendimento humano",
-                    "Analytics detalhados e relatórios em tempo real",
-                    "Suporte a múltiplos idiomas e contextos"
-                  ].map((feature, index) => (
-                    <div key={index} className="flex items-center space-x-3 animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                  {["Processamento de Linguagem Natural avançado", "Integração completa com WhatsApp Business API", "Fluxos de conversa personalizáveis e inteligentes", "Escalação automática para atendimento humano", "Analytics detalhados e relatórios em tempo real", "Suporte a múltiplos idiomas e contextos"].map((feature, index) => <div key={index} className="flex items-center space-x-3 animate-slide-up" style={{
+                  animationDelay: `${index * 0.1}s`
+                }}>
                       <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex-shrink-0"></div>
                       <span className="text-muted-foreground">{feature}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <FuturisticButton 
-                  variant="primary" 
-                  size="lg" 
-                  className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 flex-1"
-                  onClick={() => setIsFormOpen(true)}
-                >
+                <FuturisticButton variant="primary" size="lg" className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 flex-1" onClick={() => setIsFormOpen(true)}>
                   Quero Meu Bot IA
                   <Bot className="ml-2 w-5 h-5" />
                 </FuturisticButton>
                 
-                <FuturisticButton 
-                  variant="outline" 
-                  size="lg"
-                  className="border-green-500/50 text-green-400 hover:bg-green-500/10 flex-1"
-                  onClick={() => {
-                    const whatsappService = services.find(s => s.title === "Automação WhatsApp com IA");
-                    setSelectedService(whatsappService);
-                    setIsServiceModalOpen(true);
-                  }}
-                >
+                <FuturisticButton variant="outline" size="lg" className="border-green-500/50 text-green-400 hover:bg-green-500/10 flex-1" onClick={() => {
+                const whatsappService = services.find(s => s.title === "Automação WhatsApp com IA");
+                setSelectedService(whatsappService);
+                setIsServiceModalOpen(true);
+              }}>
                   Ver Detalhes
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </FuturisticButton>
