@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Code, Smartphone, Cloud, Palette, Brain, Settings, ArrowRight, Check, Zap } from "lucide-react";
+import { Code, Smartphone, Cloud, Palette, Brain, Settings, ArrowRight, Check, Zap, Bot } from "lucide-react";
 import FuturisticButton from "@/components/FuturisticButton";
 import ProjectCaptureForm from "@/components/ProjectCaptureForm";
 import ServiceDetailModal from "@/components/ServiceDetailModal";
@@ -92,6 +92,20 @@ const Services = () => {
     results: ["Redução de 90% no downtime", "Economia de 40% nos custos de infraestrutura", "Aumento de 500% na velocidade de deploy", "Melhoria de 99.9% na disponibilidade do sistema"],
     price: "Sob consulta",
     gradient: "from-orange-500 to-red-500"
+  }, {
+    icon: Bot,
+    title: "Automação WhatsApp com IA",
+    subtitle: "Atendimento inteligente 24/7",
+    description: "Implementamos bots de WhatsApp com inteligência artificial para automatizar seu atendimento ao cliente.",
+    detailedDescription: "Criamos sistemas de automação para WhatsApp que utilizam inteligência artificial avançada para fornecer atendimento personalizado e eficiente 24 horas por dia. Nossos chatbots são capazes de entender linguagem natural, responder perguntas complexas e encaminhar casos específicos para atendimento humano quando necessário.",
+    benefits: ["Atendimento disponível 24 horas por dia, 7 dias por semana", "Redução de até 80% no tempo de resposta ao cliente", "Automação de processos de vendas e suporte", "Integração completa com sistemas CRM e ERP", "Personalização baseada no histórico do cliente", "Relatórios detalhados sobre interações e performance"],
+    features: ["Processamento de Linguagem Natural", "Integração WhatsApp Business API", "Fluxos de Conversa Inteligentes", "Escalação para Atendimento Humano", "Analytics e Relatórios", "Treinamento Personalizado"],
+    techStack: ["OpenAI GPT", "WhatsApp Business API", "Node.js", "Webhook", "Natural Language Processing", "CRM Integration", "Analytics Dashboard", "Cloud Functions"],
+    timeline: "6-10 semanas",
+    ideal: ["Empresas com alto volume de atendimento", "E-commerces que querem automatizar vendas", "Prestadores de serviço que precisam de suporte 24/7", "Negócios que querem reduzir custos operacionais"],
+    results: ["Redução de 70% no tempo médio de resposta", "Aumento de 200% na satisfação do cliente", "Economia de 50% nos custos de atendimento", "Crescimento de 150% na taxa de conversão"],
+    price: "Sob consulta",
+    gradient: "from-green-500 to-emerald-500"
   }];
   const process = [{
     step: "01",
