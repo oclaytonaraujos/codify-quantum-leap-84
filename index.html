@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codify | Desenvolvimento de Software Personalizado e Inovador</title>
+    <meta name="description" content="A Codify é uma empresa brasileira especializada em desenvolvimento de software sob demanda, aplicativos mobile, APIs e soluções digitais inovadoras. Transforme sua ideia em realidade!" />
+    <meta name="keywords" content="desenvolvimento de software, empresa de software, software sob demanda, soluções digitais, software personalizado, Codify, aplicativos mobile, APIs personalizadas" />
+    <meta name="author" content="Codify" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://codify.dev.br/" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/lovable-uploads/608b2173-7fda-465a-ad6c-cc6b48e1369c.png" />
+    <link rel="apple-touch-icon" href="/lovable-uploads/608b2173-7fda-465a-ad6c-cc6b48e1369c.png" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://codify.dev.br/" />
+    <meta property="og:title" content="Codify | Desenvolvimento de Software Personalizado e Inovador" />
+    <meta property="og:description" content="A Codify é uma empresa brasileira especializada em desenvolvimento de software sob demanda, aplicativos mobile, APIs e soluções digitais inovadoras. Transforme sua ideia em realidade!" />
+    <meta property="og:image" content="https://codify.dev.br/lovable-uploads/608b2173-7fda-465a-ad6c-cc6b48e1369c.png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Codify" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://codify.dev.br/" />
+    <meta name="twitter:title" content="Codify | Desenvolvimento de Software Personalizado e Inovador" />
+    <meta name="twitter:description" content="A Codify é uma empresa brasileira especializada em desenvolvimento de software sob demanda, aplicativos mobile, APIs e soluções digitais inovadoras. Transforme sua ideia em realidade!" />
+    <meta name="twitter:image" content="https://codify.dev.br/lovable-uploads/608b2173-7fda-465a-ad6c-cc6b48e1369c.png" />
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Codify",
+      "url": "https://codify.dev.br",
+      "logo": "https://codify.dev.br/lovable-uploads/608b2173-7fda-465a-ad6c-cc6b48e1369c.png",
+      "description": "Empresa especializada em desenvolvimento de software personalizado com tecnologia de ponta",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/codify",
+        "https://github.com/codify-dev"
+      ],
+      "serviceType": [
+        "Desenvolvimento de Software",
+        "Aplicativos Mobile",
+        "APIs Personalizadas",
+        "UX/UI Design",
+        "Consultoria em TI"
+      ]
+    }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+  </head>
+
+  <body>
+    <style>
+      /* Critical CSS inline para evitar FOUC completamente */
+      * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+      }
+      
+      html { 
+        background: hsl(240, 10%, 6%); 
+      }
+      
+      body { 
+        background: hsl(240, 10%, 6%); 
+        color: hsl(0, 0%, 98%); 
+        font-family: 'Space Grotesk', system-ui, sans-serif;
+        overflow-x: hidden;
+        min-height: 100vh;
+        line-height: 1.5;
+      }
+      
+      /* Hide content until React loads */
+      #root { 
+        min-height: 100vh; 
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      #root.loaded {
+        opacity: 1;
+      }
+      
+      /* Critical component styles */
+      .min-h-screen {
+        min-height: 100vh;
+      }
+      
+      .flex {
+        display: flex;
+      }
+      
+      .flex-col {
+        flex-direction: column;
+      }
+      
+      .flex-1 {
+        flex: 1 1 0%;
+      }
+      
+      /* Prevent any flash of white/unstyled content */
+      div, section, header, main, footer, nav {
+        background-color: inherit;
+        color: inherit;
+      }
+      
+      .initial-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: hsl(240, 10%, 6%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease;
+      }
+      
+      .loader-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid hsl(240, 10%, 18%);
+        border-top: 3px solid hsl(262, 100%, 65%);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+    
+    <div class="initial-loader" id="initial-loader">
+      <div class="loader-spinner"></div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <script>
+      // Improved loading sequence
+      let reactLoaded = false;
+      
+      // Hide loader when React is ready
+      function hideLoader() {
+        const loader = document.getElementById('initial-loader');
+        const root = document.getElementById('root');
+        
+        if (loader && root && reactLoaded) {
+          root.classList.add('loaded');
+          loader.style.opacity = '0';
+          setTimeout(() => {
+            if (loader.parentNode) {
+              loader.remove();
+            }
+          }, 500);
+        }
+      }
+      
+      // Mark React as loaded when content appears
+      const observer = new MutationObserver(() => {
+        const root = document.getElementById('root');
+        if (root && root.children.length > 0) {
+          reactLoaded = true;
+          hideLoader();
+          observer.disconnect();
+        }
+      });
+      
+      // Start observing
+      document.addEventListener('DOMContentLoaded', () => {
+        const root = document.getElementById('root');
+        if (root) {
+          observer.observe(root, { childList: true, subtree: true });
+        }
+        
+        // Fallback timeout
+        setTimeout(() => {
+          reactLoaded = true;
+          hideLoader();
+        }, 3000);
+      });
+    </script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

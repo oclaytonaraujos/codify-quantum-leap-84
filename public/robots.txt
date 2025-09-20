@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /sobre
+Allow: /servicos
+Allow: /portfolio
+Allow: /blog
+Allow: /contato
+Allow: /solicitar-orcamento
+
+Disallow: /admin
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+Sitemap: https://codify.dev.br/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
