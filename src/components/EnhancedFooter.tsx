@@ -103,7 +103,7 @@ const EnhancedFooter = () => {
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-secondary flex-shrink-0" />
-                <span>(64) 9 9890-403</span>
+                <span>(64) 9989-0403</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-secondary flex-shrink-0" />
