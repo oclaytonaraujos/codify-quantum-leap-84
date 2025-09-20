@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Code, Smartphone, Cloud, Palette, Brain, Settings, ArrowRight, Check, Zap, Bot } from "lucide-react";
+import { Code, Smartphone, Cloud, Palette, Brain, Settings, ArrowRight, Check, Zap, Bot, MessageCircle, Clock, Users, TrendingUp, Sparkles, Star } from "lucide-react";
 import FuturisticButton from "@/components/FuturisticButton";
 import ProjectCaptureForm from "@/components/ProjectCaptureForm";
 import ServiceDetailModal from "@/components/ServiceDetailModal";
@@ -152,6 +152,182 @@ const Services = () => {
             Soluções completas em desenvolvimento de software para transformar 
             sua visão em realidade digital extraordinária.
           </p>
+        </div>
+      </section>
+
+      {/* WhatsApp Bot AI Featured Section */}
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-emerald-500/5 to-teal-500/10"></div>
+        <div className="absolute inset-0 bg-[var(--gradient-mesh)] opacity-20"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-full px-6 py-3 mb-6 border border-green-500/30">
+              <Sparkles className="w-5 h-5 text-green-400" />
+              <span className="text-green-400 font-medium">Destaque da Semana</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-orbitron font-bold mb-6 cyber-text">
+              Automação WhatsApp
+              <span className="block text-4xl md:text-5xl holographic">com Inteligência Artificial</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Revolucione seu atendimento ao cliente com nosso bot inteligente de WhatsApp. 
+              <span className="text-green-400 font-medium"> Atendimento 24/7, respostas instantâneas</span> e 
+              vendas automatizadas que nunca param.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Visual Elements */}
+            <div className="relative">
+              <div className="relative glass rounded-3xl p-8 animate-float">
+                <div className="flex items-center space-x-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center glow-green animate-gentle-glow">
+                    <MessageCircle className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-orbitron font-bold text-green-400">WhatsApp Business API</h3>
+                    <p className="text-muted-foreground">Integração Oficial</p>
+                  </div>
+                </div>
+                
+                {/* Mock conversation preview */}
+                <div className="space-y-4 mb-6">
+                  <div className="flex justify-end">
+                    <div className="bg-green-500 text-white rounded-2xl rounded-tr-sm px-4 py-2 max-w-xs">
+                      Oi! Gostaria de saber sobre seus produtos
+                    </div>
+                  </div>
+                  <div className="flex justify-start">
+                    <div className="glass rounded-2xl rounded-tl-sm px-4 py-2 max-w-xs border border-primary/30">
+                      Olá! 👋 Sou a IA da empresa. Posso te ajudar com informações sobre produtos, preços e até processar seu pedido!
+                    </div>
+                  </div>
+                  <div className="flex justify-end">
+                    <div className="bg-green-500 text-white rounded-2xl rounded-tr-sm px-4 py-2 max-w-xs">
+                      Perfeito! Quero fazer um orçamento
+                    </div>
+                  </div>
+                  <div className="flex justify-start">
+                    <div className="glass rounded-2xl rounded-tl-sm px-4 py-2 max-w-xs border border-primary/30">
+                      Excelente! Vou te enviar nosso formulário inteligente...
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between text-sm text-muted-foreground">
+                  <span className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <span>Online agora</span>
+                  </span>
+                  <span>Resposta em menos de 2s</span>
+                </div>
+              </div>
+
+              {/* Floating stats */}
+              <div className="absolute -top-6 -right-6 glass rounded-2xl p-4 animate-orbital-motion">
+                <div className="text-center">
+                  <div className="text-2xl font-orbitron font-bold text-green-400">98%</div>
+                  <div className="text-xs text-muted-foreground">Satisfação</div>
+                </div>
+              </div>
+              
+              <div className="absolute -bottom-6 -left-6 glass rounded-2xl p-4 animate-matrix-drift">
+                <div className="text-center">
+                  <div className="text-2xl font-orbitron font-bold text-emerald-400">24/7</div>
+                  <div className="text-xs text-muted-foreground">Disponível</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - Features and Benefits */}
+            <div className="space-y-8">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300">
+                  <Clock className="w-8 h-8 text-green-400 mx-auto mb-3" />
+                  <div className="text-2xl font-orbitron font-bold text-green-400">-80%</div>
+                  <div className="text-sm text-muted-foreground">Tempo de Resposta</div>
+                </div>
+                
+                <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300">
+                  <Users className="w-8 h-8 text-emerald-400 mx-auto mb-3" />
+                  <div className="text-2xl font-orbitron font-bold text-emerald-400">+200%</div>
+                  <div className="text-sm text-muted-foreground">Conversões</div>
+                </div>
+                
+                <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300">
+                  <TrendingUp className="w-8 h-8 text-teal-400 mx-auto mb-3" />
+                  <div className="text-2xl font-orbitron font-bold text-teal-400">+150%</div>
+                  <div className="text-sm text-muted-foreground">Vendas</div>
+                </div>
+                
+                <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300">
+                  <Star className="w-8 h-8 text-yellow-400 mx-auto mb-3" />
+                  <div className="text-2xl font-orbitron font-bold text-yellow-400">4.9/5</div>
+                  <div className="text-sm text-muted-foreground">Avaliação</div>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <h4 className="text-2xl font-orbitron font-bold text-green-400">Principais Funcionalidades:</h4>
+                
+                <div className="space-y-3">
+                  {[
+                    "Processamento de Linguagem Natural avançado",
+                    "Integração completa com WhatsApp Business API",
+                    "Fluxos de conversa personalizáveis e inteligentes",
+                    "Escalação automática para atendimento humano",
+                    "Analytics detalhados e relatórios em tempo real",
+                    "Suporte a múltiplos idiomas e contextos"
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center space-x-3 animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                      <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex-shrink-0"></div>
+                      <span className="text-muted-foreground">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <FuturisticButton 
+                  variant="primary" 
+                  size="lg" 
+                  className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 flex-1"
+                  onClick={() => setIsFormOpen(true)}
+                >
+                  Quero Meu Bot IA
+                  <Bot className="ml-2 w-5 h-5" />
+                </FuturisticButton>
+                
+                <FuturisticButton 
+                  variant="outline" 
+                  size="lg"
+                  className="border-green-500/50 text-green-400 hover:bg-green-500/10 flex-1"
+                  onClick={() => {
+                    const whatsappService = services.find(s => s.title === "Automação WhatsApp com IA");
+                    setSelectedService(whatsappService);
+                    setIsServiceModalOpen(true);
+                  }}
+                >
+                  Ver Detalhes
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </FuturisticButton>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 left-10 animate-float opacity-60">
+            <MessageCircle className="w-12 h-12 text-green-400" />
+          </div>
+          <div className="absolute bottom-20 right-10 animate-orbital-motion opacity-60">
+            <Bot className="w-16 h-16 text-emerald-400" />
+          </div>
+          <div className="absolute top-1/2 right-20 animate-matrix-drift opacity-40">
+            <Zap className="w-10 h-10 text-teal-400" />
+          </div>
         </div>
       </section>
 
