@@ -19,34 +19,17 @@ const FloatingActionButton = () => {
     href: "mailto:codifydev.principal@gmail.com",
     color: "glass border border-purple-500/50 text-purple-500 hover:text-purple-400"
   }];
-
-  return (
-    <div className="fixed bottom-6 left-6 z-50">
-      {isOpen && (
-        <div className="mb-4 space-y-3">
-          {actions.map((action, index) => (
-            <a
-              key={action.label}
-              href={action.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex items-center space-x-2 p-3 rounded-full ${action.color} hover:scale-110 transition-all duration-300 animate-fade-scale backdrop-blur-lg`}
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+  return <div className="fixed bottom-6 left-6 z-50">
+      {isOpen && <div className="mb-4 space-y-3">
+          {actions.map((action, index) => <a key={action.label} href={action.href} target="_blank" rel="noopener noreferrer" className={`flex items-center space-x-2 p-3 rounded-full ${action.color} hover:scale-110 transition-all duration-300 animate-fade-scale backdrop-blur-lg`} style={{
+        animationDelay: `${index * 0.1}s`
+      }}>
               <action.icon className="w-5 h-5" />
               <span className="text-sm font-medium">{action.label}</span>
-            </a>
-          ))}
-        </div>
-      )}
+            </a>)}
+        </div>}
       
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-white glow-primary hover:scale-110 transition-all duration-300 backdrop-blur-lg"
-      >
-        {isOpen ? <X className="w-6 h-6" /> : <Plus className="w-6 h-6" />}
-      </button>
-    </div>
-  );
+      
+    </div>;
 };
 export default FloatingActionButton;
