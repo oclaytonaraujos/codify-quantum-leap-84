@@ -76,7 +76,7 @@ const CounterStats = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-6 lg:gap-8">
           {stats.map((stat, index) => <div key={stat.label} className="text-center group animate-fade-scale" style={{
           animationDelay: `${index * 0.1}s`
         }}>

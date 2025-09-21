@@ -102,7 +102,7 @@ const Home = () => {
                 soluções que superam expectativas.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-4">
                 {features.map((feature, index) => <div key={feature} className="flex items-center space-x-3 animate-fade-scale" style={{
                 animationDelay: `${index * 0.1}s`
               }}>
@@ -154,7 +154,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-6 lg:gap-8">
             {testimonials.map((testimonial, index) => <div key={testimonial.name} className="glass p-8 rounded-2xl hover:scale-105 transition-all duration-500 animate-fade-scale" style={{
             animationDelay: `${index * 0.1}s`
           }}>

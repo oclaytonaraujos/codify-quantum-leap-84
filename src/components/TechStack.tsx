@@ -86,7 +86,7 @@ const TechStack = () => {
         </div>
 
         {/* Technology grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-6">
           {techCategories[activeCategory as keyof typeof techCategories].technologies.map((tech, index) => (
             <div
               key={tech.name}
