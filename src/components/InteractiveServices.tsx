@@ -59,7 +59,7 @@ const InteractiveServices = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-4 md:gap-6 lg:gap-8">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-6 lg:gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
