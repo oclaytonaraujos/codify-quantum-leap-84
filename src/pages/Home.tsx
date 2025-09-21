@@ -154,7 +154,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] grid-flow-col md:grid-flow-row overflow-x-auto md:overflow-x-visible gap-6 lg:gap-8 pb-4 md:pb-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-4 md:gap-6 lg:gap-8">
             {testimonials.map((testimonial, index) => <div key={testimonial.name} className="glass p-8 rounded-2xl hover:scale-105 transition-all duration-500 animate-fade-scale" style={{
             animationDelay: `${index * 0.1}s`
           }}>
