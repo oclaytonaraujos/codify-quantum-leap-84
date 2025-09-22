@@ -122,7 +122,7 @@ const Home = () => {
             </div>
 
             <div className="relative">
-              <div className="aspect-square glass rounded-3xl p-8 flex items-center justify-center">
+              <div className="aspect-square liquid-glass-card rounded-3xl p-8 flex items-center justify-center">
                 <div className="text-center space-y-6">
                   <div className="w-32 h-32 mx-auto rounded-full bg-gradient-primary flex items-center justify-center animate-gentle-glow">
                     <Shield className="w-16 h-16 text-white" />
@@ -155,7 +155,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-6 lg:gap-8">
-            {testimonials.map((testimonial, index) => <div key={testimonial.name} className="glass p-8 rounded-2xl hover:scale-105 transition-all duration-500 animate-fade-scale" style={{
+            {testimonials.map((testimonial, index) => <div key={testimonial.name} className="liquid-glass-card p-8 rounded-2xl hover:scale-105 transition-all duration-500 animate-fade-scale" style={{
             animationDelay: `${index * 0.1}s`
           }}>
                 <div className="flex mb-4">

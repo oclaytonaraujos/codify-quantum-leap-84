@@ -80,7 +80,7 @@ const CounterStats = () => {
           {stats.map((stat, index) => <div key={stat.label} className="text-center group animate-fade-scale" style={{
           animationDelay: `${index * 0.1}s`
         }}>
-              <div className="cyber-glass p-8 rounded-2xl hover-glow transition-all duration-500">
+              <div className="liquid-glass-card p-8 rounded-2xl hover-glow transition-all duration-500">
                 {/* Icon */}
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <stat.icon className="w-8 h-8 text-white" />
@@ -108,7 +108,7 @@ const CounterStats = () => {
 
         {/* Additional content */}
         <div className="text-center mt-16">
-          <div className="cyber-glass p-8 rounded-2xl max-w-3xl mx-auto">
+          <div className="liquid-glass-card p-8 rounded-2xl max-w-3xl mx-auto">
             <h3 className="text-2xl font-orbitron font-bold mb-4 holographic">
               Comprometidos com a Excelência
             </h3>

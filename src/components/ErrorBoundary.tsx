@@ -129,7 +129,7 @@ Please describe what you were doing when this error occurred:
       return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-dark p-4">
           <div className="max-w-2xl w-full">
-            <div className="glass p-8 rounded-3xl text-center space-y-8">
+            <div className="liquid-glass-card p-8 rounded-3xl text-center space-y-8">
               {/* Error Icon */}
               <div className="relative">
                 <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-destructive/20 to-destructive/10 flex items-center justify-center animate-gentle-glow">

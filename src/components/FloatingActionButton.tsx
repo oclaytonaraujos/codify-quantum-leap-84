@@ -7,17 +7,17 @@ const FloatingActionButton = () => {
     icon: MessageCircle,
     label: "WhatsApp",
     href: "https://wa.me/556499890403?text=Olá! Vi suas informações de contato e gostaria de conversar sobre um projeto.",
-    color: "glass border border-green-500/50 text-green-500 hover:text-green-400 glow-green"
+    color: "liquid-glass border border-green-500/50 text-green-500 hover:text-green-400 glow-green"
   }, {
     icon: Phone,
     label: "Ligar",
     href: "tel:+55649989403",
-    color: "glass border border-blue-500/50 text-blue-500 hover:text-blue-400"
+    color: "liquid-glass border border-blue-500/50 text-blue-500 hover:text-blue-400"
   }, {
     icon: Mail,
     label: "Email",
     href: "mailto:codifydev.principal@gmail.com",
-    color: "glass border border-purple-500/50 text-purple-500 hover:text-purple-400"
+    color: "liquid-glass border border-purple-500/50 text-purple-500 hover:text-purple-400"
   }];
   return <div className="fixed bottom-6 left-6 z-50">
       {isOpen && <div className="mb-4 space-y-3">

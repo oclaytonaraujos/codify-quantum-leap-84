@@ -41,7 +41,7 @@ const BlogPostModal = ({ post, open, onOpenChange }: BlogPostModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto glass border-primary/20">
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto liquid-glass border-primary/20">
         <DialogHeader className="space-y-4">
           <div className="flex items-start justify-between">
             <div className="flex-1 pr-4">
@@ -79,7 +79,7 @@ const BlogPostModal = ({ post, open, onOpenChange }: BlogPostModalProps) => {
             
             <button
               onClick={() => onOpenChange(false)}
-              className="p-2 rounded-full glass hover:bg-primary/20 transition-colors duration-300"
+              className="p-2 rounded-full liquid-glass hover:bg-primary/20 transition-colors duration-300"
             >
               <X className="w-5 h-5" />
             </button>
@@ -147,41 +147,41 @@ const BlogPostModal = ({ post, open, onOpenChange }: BlogPostModalProps) => {
                   Compartilhar Artigo
                 </FuturisticButton>
               </PopoverTrigger>
-              <PopoverContent className="w-80 glass border-primary/20" align="start">
+              <PopoverContent className="w-80 liquid-glass border-primary/20" align="start">
                 <div className="space-y-4">
                   <h4 className="font-medium text-sm text-foreground">Compartilhar em:</h4>
                   <div className="grid grid-cols-2 gap-3">
                     <button
                       onClick={() => handleSocialShare('facebook')}
-                      className="flex items-center gap-3 p-3 rounded-lg glass hover:bg-primary/10 transition-all duration-300 text-left"
+                      className="flex items-center gap-3 p-3 rounded-lg liquid-glass hover:bg-primary/10 transition-all duration-300 text-left"
                     >
                       <FaFacebook className="w-5 h-5 text-blue-500" />
                       <span className="text-sm font-medium">Facebook</span>
                     </button>
                     <button
                       onClick={() => handleSocialShare('twitter')}
-                      className="flex items-center gap-3 p-3 rounded-lg glass hover:bg-primary/10 transition-all duration-300 text-left"
+                      className="flex items-center gap-3 p-3 rounded-lg liquid-glass hover:bg-primary/10 transition-all duration-300 text-left"
                     >
                       <FaTwitter className="w-5 h-5 text-blue-400" />
                       <span className="text-sm font-medium">Twitter</span>
                     </button>
                     <button
                       onClick={() => handleSocialShare('linkedin')}
-                      className="flex items-center gap-3 p-3 rounded-lg glass hover:bg-primary/10 transition-all duration-300 text-left"
+                      className="flex items-center gap-3 p-3 rounded-lg liquid-glass hover:bg-primary/10 transition-all duration-300 text-left"
                     >
                       <FaLinkedin className="w-5 h-5 text-blue-600" />
                       <span className="text-sm font-medium">LinkedIn</span>
                     </button>
                     <button
                       onClick={() => handleSocialShare('whatsapp')}
-                      className="flex items-center gap-3 p-3 rounded-lg glass hover:bg-primary/10 transition-all duration-300 text-left"
+                      className="flex items-center gap-3 p-3 rounded-lg liquid-glass hover:bg-primary/10 transition-all duration-300 text-left"
                     >
                       <FaWhatsapp className="w-5 h-5 text-green-500" />
                       <span className="text-sm font-medium">WhatsApp</span>
                     </button>
                     <button
                       onClick={() => handleSocialShare('telegram')}
-                      className="flex items-center gap-3 p-3 rounded-lg glass hover:bg-primary/10 transition-all duration-300 text-left col-span-2"
+                      className="flex items-center gap-3 p-3 rounded-lg liquid-glass hover:bg-primary/10 transition-all duration-300 text-left col-span-2"
                     >
                       <FaTelegram className="w-5 h-5 text-blue-500" />
                       <span className="text-sm font-medium">Telegram</span>

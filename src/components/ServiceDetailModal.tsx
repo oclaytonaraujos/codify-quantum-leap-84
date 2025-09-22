@@ -86,7 +86,7 @@ const ServiceDetailModal = ({ service, open, onOpenChange, onContactClick }: Ser
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {service.benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-3 p-4 glass rounded-lg">
+                <div key={index} className="flex items-start gap-3 p-4 liquid-glass rounded-lg">
                   <Star className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                   <span className="text-sm leading-relaxed">{benefit}</span>
                 </div>
@@ -163,7 +163,7 @@ const ServiceDetailModal = ({ service, open, onOpenChange, onContactClick }: Ser
               <Clock className="w-5 h-5 text-primary" />
               Prazo de Implementação
             </h3>
-            <div className="p-4 glass rounded-lg">
+            <div className="p-4 liquid-glass rounded-lg">
               <p className="text-lg font-medium text-primary">{service.timeline}</p>
             </div>
           </div>

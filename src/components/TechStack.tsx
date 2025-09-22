@@ -75,8 +75,8 @@ const TechStack = () => {
               onClick={() => setActiveCategory(key)}
               className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
                 activeCategory === key
-                  ? 'bg-primary text-primary-foreground glow-primary'
-                  : 'cyber-glass text-muted-foreground hover:text-primary hover:border-primary/50'
+                  ? 'liquid-glass-button text-primary-foreground glow-primary'
+                  : 'liquid-glass text-muted-foreground hover:text-primary hover:border-primary/50'
               }`}
             >
               <span className="mr-2">{category.icon}</span>
@@ -90,7 +90,7 @@ const TechStack = () => {
           {techCategories[activeCategory as keyof typeof techCategories].technologies.map((tech, index) => (
             <div
               key={tech.name}
-              className="group cyber-glass p-6 rounded-xl hover-glow transition-all duration-500 animate-fade-scale"
+              className="group liquid-glass-card p-6 rounded-xl hover-glow transition-all duration-500 animate-fade-scale"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center space-x-4 mb-4">

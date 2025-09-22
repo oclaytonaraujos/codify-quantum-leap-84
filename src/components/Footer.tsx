@@ -36,7 +36,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-dark border-t border-primary/20 mt-20">
+    <footer className="liquid-glass bg-gradient-dark border-t border-primary/20 mt-20">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & Description */}
@@ -62,7 +62,7 @@ const Footer = () => {
                 <a
                   key={label}
                   href={href}
-                  className="p-2 rounded-lg glass border border-primary/20 text-muted-foreground hover:text-primary hover:border-primary/50 hover:shadow-primary/20 transition-all duration-300"
+                  className="p-2 rounded-lg liquid-glass border border-primary/20 text-muted-foreground hover:text-primary hover:border-primary/50 hover:shadow-primary/20 transition-all duration-300"
                   aria-label={label}
                 >
                   <Icon className="w-5 h-5" />
